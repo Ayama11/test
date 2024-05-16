@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:testptc/feature/cart/presintions/views/cart_view.dart';
 import 'package:testptc/feature/cart/presintions/views/success_order.dart';
-import 'package:testptc/feature/home/presintions/views/beverages_view.dart';
+import 'package:testptc/feature/bever/views/beverages_view.dart';
 import 'package:testptc/feature/home/presintions/views/home_view.dart';
 import 'package:testptc/feature/home/presintions/views/widgets/buttom_nav_bar.dart';
 import 'package:testptc/feature/splash/onbording.dart';

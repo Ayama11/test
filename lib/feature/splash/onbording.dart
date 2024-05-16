@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:testptc/core/utils/app_ruoter.dart';
 import 'package:testptc/core/utils/assets.dart';
 import 'package:testptc/core/utils/consts.dart';
@@ -11,7 +12,12 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+        body: AnnotatedRegion<SystemUiOverlayStyle>(
+      value: const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+      child: Stack(
         children: [
           Image.asset(
             Assets.onBording,
@@ -51,6 +57,6 @@ class OnboardingScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ));
   }
 }

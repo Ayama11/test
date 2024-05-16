@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testptc/core/utils/assets.dart';
 import 'package:testptc/core/utils/consts.dart';
 
 class CartBody extends StatelessWidget {
@@ -23,9 +24,10 @@ class CartBody extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            child: const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Row(),
+            child: Row(
+              children: [
+                Image.asset(Assets.cart, height: 64, width: 70),
+              ],
             )),
       ],
     ));

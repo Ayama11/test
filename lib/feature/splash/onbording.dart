@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:testptc/core/utils/app_ruoter.dart';
 import 'package:testptc/core/utils/assets.dart';
+import 'package:testptc/core/utils/consts.dart';
+import 'package:testptc/core/widgets/button.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -23,38 +27,24 @@ class OnboardingScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(
-                  'Welcome to our store',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  'Welcome              to our store',
+                  style: Styles.textStyle48W400,
                   textAlign: TextAlign.center,
+                  maxLines: 2,
                 ),
                 const SizedBox(height: 16),
                 const Text(
                   'Get your groceries in as fast as one hour',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
+                  style: Styles.textStyle16W400,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: () {
-                    // go ruoter to home view
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 20),
-                    textStyle: const TextStyle(
-                      fontSize: 16,
-                    ),
-                  ),
-                  child: const Text('Get Started'),
-                ),
+                const SizedBox(height: 30),
+                Button(
+                    title: "Get Started",
+                    onTap: () {
+                      GoRouter.of(context)
+                          .pushReplacement(AppRouter.kButtomNav);
+                    }),
                 const SizedBox(height: 40),
               ],
             ),

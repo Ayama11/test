@@ -6,26 +6,40 @@ class CardHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color.fromARGB(255, 165, 210, 247),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        // color: const Color.fromARGB(255, 165, 210, 247),
-      ),
-      width: 200,
-      height: 400,
-      child: Column(
-        children: [
-          Image.asset(Assets.cardHomeImages),
-          const SizedBox(
-            height: 10,
+    return GestureDetector(
+      onTap: () {
+        // go ruoter to detils category
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 200, 226, 247),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: const Color.fromARGB(255, 127, 199, 218), // لون الحدود
+            width: 2, // عرض الحدود
           ),
-          const Text(
-            "Fresh Frutis & Vegetable",
-            textAlign: TextAlign.center,
-            maxLines: 2,
-          )
-        ],
+        ),
+        width: 200,
+        height: 400,
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+                height: 70,
+                width: 100,
+                child: Image.asset(Assets.cardHomeImages)),
+            const SizedBox(
+              height: 30,
+            ),
+            const Text(
+              "Fresh Frutis & Vegetable",
+              textAlign: TextAlign.center,
+              maxLines: 2,
+            )
+          ],
+        ),
       ),
     );
   }

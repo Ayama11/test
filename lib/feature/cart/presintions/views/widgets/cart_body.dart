@@ -5,6 +5,14 @@ class CartBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            color: const Color.fromARGB(255, 173, 204, 230),
+          )
+        ],
+      ),
+    );
   }
 }

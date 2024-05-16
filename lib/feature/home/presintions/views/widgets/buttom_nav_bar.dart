@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testptc/feature/cart/presintions/views/cart_view.dart';
 import 'package:testptc/feature/home/presintions/views/home_view.dart';
 import 'package:get/get.dart';
 
@@ -49,7 +50,7 @@ class NavigationController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
   final viewScreen = [
     const HomeView(),
-    // CartView(),
+    const CartView(),
     // const FavoriteView(),
     // const ProfileView(),
   ];

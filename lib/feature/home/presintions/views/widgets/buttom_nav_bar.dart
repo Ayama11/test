@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:testptc/core/utils/consts.dart';
 import 'package:testptc/feature/cart/presintions/views/cart_view.dart';
 import 'package:testptc/feature/cart/presintions/views/search_view.dart';
-import 'package:testptc/feature/home/presintions/views/beverages_view.dart';
+import 'package:testptc/feature/bever/views/beverages_view.dart';
 import 'package:testptc/feature/home/presintions/views/home_view.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,7 @@ class NavigationMuneBottom extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBar(
+          indicatorColor: const Color.fromARGB(255, 185, 243, 206),
           backgroundColor: Colors.white,
           elevation: 0,
           height: 65,

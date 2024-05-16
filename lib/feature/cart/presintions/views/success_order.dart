@@ -17,19 +17,20 @@ class SuccessOrder extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(top: 118),
             child: AspectRatio(
-              aspectRatio: 2.2,
+              aspectRatio: 1.8,
               child: Image(
                 image: AssetImage(Assets.success),
               ),
             ),
           ),
-          const SizedBox(height: 60),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+          const SizedBox(height: 70),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               textAlign: TextAlign.center,
-              "Your Order has beenaccepted",
-              style: Styles.textStyle16W400,
+              "Your Order has been accepted",
+              style: Styles.textStyle48W400
+                  .copyWith(color: Colors.black, fontSize: 28),
             ),
           ),
           const SizedBox(height: 36),
@@ -41,7 +42,7 @@ class SuccessOrder extends StatelessWidget {
               //    style: Styles.textStyle18W400.copyWith(fontSize: 20),
             ),
           ),
-          SizedBox(height: MediaQuery.of(context).size.height * .26),
+          SizedBox(height: MediaQuery.of(context).size.height * .18),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Button(
@@ -50,6 +51,14 @@ class SuccessOrder extends StatelessWidget {
                   GoRouter.of(context).pushReplacement(AppRouter.kSuccessOrder);
                 }),
           ),
+          TextButton(
+              onPressed: () {
+                GoRouter.of(context).pushReplacement(AppRouter.kButtomNav);
+              },
+              child: Text(
+                "Back Home",
+                style: Styles.textStyle16W400.copyWith(color: Colors.black),
+              )),
         ],
       ),
     );

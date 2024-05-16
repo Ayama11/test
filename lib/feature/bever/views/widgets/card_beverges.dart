@@ -135,7 +135,7 @@ class AddItemForm extends StatelessWidget {
             controller: imageController,
             decoration: const InputDecoration(labelText: 'Image '),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 30),
           Button(title: "Add item", onTap: () {}),
           const SizedBox(height: 20),
         ],

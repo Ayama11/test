@@ -54,14 +54,6 @@ class AppBarW extends StatelessWidget implements PreferredSizeWidget {
                 : null,
         title: titel,
         actions: actions,
-        // [
-        //   Builder(builder: (BuildContext context) {
-        //     return IconButton(
-        //       icon: const Icon(Iconsax.notification),
-        //       onPressed: () {},
-        //     );
-        //   })
-        // ],
       ),
     );
   }

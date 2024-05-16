@@ -15,8 +15,8 @@ class CardHome extends StatelessWidget {
           color: const Color.fromARGB(255, 200, 226, 247),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: const Color.fromARGB(255, 127, 199, 218), // لون الحدود
-            width: 2, // عرض الحدود
+            color: const Color.fromARGB(255, 127, 199, 218),
+            width: 2,
           ),
         ),
         width: 200,

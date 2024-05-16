@@ -70,7 +70,7 @@ class CustomCard extends StatelessWidget {
                   const Icon(Icons.close),
                   const SizedBox(height: 45),
                   Text(
-                    "66 $s",
+                    "2.9 $s",
                     style: Styles.textStyle16W400.copyWith(
                         color: Colors.black, fontWeight: FontWeight.w600),
                   ),

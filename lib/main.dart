@@ -12,6 +12,8 @@ void main() async {
 
   FlutterNativeSplash.remove();
   runApp(const TestPtc());
+
+  //for getx
   Get.testMode = true;
 }
 

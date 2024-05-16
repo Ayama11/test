@@ -38,7 +38,7 @@ class BeveragesBody extends StatelessWidget {
                   icon: Iconsax.add)
             ],
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18),
             child: GridViewhome(
@@ -48,30 +48,6 @@ class BeveragesBody extends StatelessWidget {
                 },
                 crossAxisCount: 2),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class CardBeverages extends StatelessWidget {
-  const CardBeverages({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          const SizedBox(height: 30),
-          AppBarW(
-            backgroundColor: Colors.transparent,
-            titel: Text(
-              "Beverages",
-              textAlign: TextAlign.center,
-              style: Styles.textStyle16W400
-                  .copyWith(fontSize: 20, color: const Color(0xff181725)),
-            ),
-          )
         ],
       ),
     );

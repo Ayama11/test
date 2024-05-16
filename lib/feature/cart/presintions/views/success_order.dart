@@ -38,8 +38,7 @@ class SuccessOrder extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 28),
             child: Text(
               textAlign: TextAlign.center,
-              "Please login now and enjoy using Voyago",
-              //    style: Styles.textStyle18W400.copyWith(fontSize: 20),
+              "Your items has been placcd and is on it’s way to being processed",
             ),
           ),
           SizedBox(height: MediaQuery.of(context).size.height * .18),

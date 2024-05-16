@@ -35,8 +35,8 @@ class NavigationMuneBottom extends StatelessWidget {
               label: "cart",
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.heart),
-              label: "favort",
+              icon: Icon(Iconsax.shop),
+              label: "beverages",
             ),
             NavigationDestination(
               icon: Icon(Iconsax.search_normal),

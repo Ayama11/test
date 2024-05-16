@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testptc/feature/cart/presintions/views/cart_view.dart';
+import 'package:testptc/feature/cart/presintions/views/search_view.dart';
+import 'package:testptc/feature/home/presintions/views/beverages_view.dart';
 import 'package:testptc/feature/home/presintions/views/home_view.dart';
 import 'package:get/get.dart';
 
@@ -35,8 +37,8 @@ class NavigationMuneBottom extends StatelessWidget {
               label: "favort",
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.user),
-              label: "profile",
+              icon: Icon(Iconsax.search_normal),
+              label: "search",
             ),
           ],
         ),
@@ -51,7 +53,7 @@ class NavigationController extends GetxController {
   final viewScreen = [
     const HomeView(),
     const CartView(),
-    // const FavoriteView(),
-    // const ProfileView(),
+    const BeveragesView(),
+    const SearchView(),
   ];
 }

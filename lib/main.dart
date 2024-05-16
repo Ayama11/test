@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
 import 'package:testptc/core/utils/app_ruoter.dart';
 import 'package:testptc/feature/home/presintions/views/home_view.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,6 +12,7 @@ void main() async {
 
   FlutterNativeSplash.remove();
   runApp(const TestPtc());
+  Get.testMode = true;
 }
 
 class TestPtc extends StatelessWidget {

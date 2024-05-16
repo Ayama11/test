@@ -3,7 +3,10 @@ import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:testptc/core/utils/consts.dart';
 import 'package:testptc/feature/bever/views/widgets/app_bar.dart';
+import 'package:testptc/feature/bever/views/widgets/card_beverges.dart';
 import 'package:testptc/feature/cart/presintions/views/widgets/icons.dart';
+import 'package:testptc/feature/home/presintions/views/widgets/card_home.dart';
+import 'package:testptc/feature/home/presintions/views/widgets/grid_home.dart';
 
 class BeveragesBody extends StatelessWidget {
   const BeveragesBody({super.key});
@@ -34,6 +37,16 @@ class BeveragesBody extends StatelessWidget {
                   backgrounColor: Consts.kPraimaryColor,
                   icon: Iconsax.add)
             ],
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18),
+            child: GridViewhome(
+                itemCount: 6,
+                itemBuilder: (BuildContext, int) {
+                  return const CardBever();
+                },
+                crossAxisCount: 2),
           ),
         ],
       ),
